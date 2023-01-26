@@ -1,0 +1,61 @@
+.titulo-biografia {
+    text-align: center;
+    background-color: $background-principal;
+    border-width: 2px;
+    margin-top: -440px;
+    font-size: 30px;
+}
+
+.biografia{
+    p{
+    text-align: left;
+    background-color: $background-principal;
+    font-size: 18px;
+    align-items: center;
+    margin-top: 10px;
+    }
+}
+
+/* IMÁGENES */
+/* imagen1 */
+.artur-conan-doyle-1{
+    img{
+    width: 150px;
+    margin-top: 100px;
+    margin-left: 10px;
+    }
+}
+
+/* imagen2 */
+.artur-conan-doyle-2{
+    img{
+    width: 400px;
+    margin-left: 900px;
+    background-color: $background-principal;
+    font-size: 50px;
+    }
+}
+
+/* BOTON +INFO */
+.info-biografia{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+}
+.info-biografia{
+    a{
+    text-decoration: none;
+    font-style: none;
+    color: $color-principal;
+    background-color: $background-principal;
+    border-color: $color-principal;
+    border-width: 3px;
+    border-style:inset;
+    width: 25%;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    }
+}
+

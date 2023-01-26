@@ -1,0 +1,115 @@
+/* TITULOS (h1)*/
+.libros{
+    text-align: center;
+    background-color: $background-principal;
+    border-width: 2px;
+    margin-top: -70px;
+    font-size: 30px;
+}
+
+/* TITULOS DE LOS LIBROS */
+.titulo{
+    text-align: center;
+    color: $color-principal;
+    background-color: $background-principal;
+    border-color: $color-principal;
+    border-width: 2px;
+    border-style:inset;
+    width: 100%;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+/* RESUMENES (p) */
+.resumen{
+    text-align: center;
+    background-color: $background-principal;
+    width: 100%;
+    font-size: 22px;
+    text-align: left;
+    margin-top: 10px;
+    :first-letter{
+        float: left;
+        color: $color-principal;
+        font-family: monospace;
+        font-size: 400%;
+        text-align: right;
+        margin-left: 5px;
+        margin-right: 20px;
+    }
+}
+/* BOTON +INFO */
+.info{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+        a{
+            text-decoration: none;
+            font-style: none;
+            color: $color-principal;
+            background-color: $background-principal;
+            color: $color-principal;
+            border-width: 3px;
+            border-style:inset;
+            width: 25%;
+            font-size: 40px;
+            display: flex;
+            justify-content: center;
+        }
+}
+
+/* <!-- ESTUDIO EN ESCARLATA - 1887 --> */
+.imagen-estudio-en-escarlata-1887{
+    @include box-model (20px, 10px, 10px, 20px);
+    float: left;
+    width: 150px;
+}
+
+/* El signo de los cuatro - 1890 */
+.imagen-el-signo-de-los-cuatro-1890{
+    @extend .imagen-estudio-en-escarlata-1887; 
+    float: right;
+}
+
+/* Las aventuras de Sherlock Holmes - 1891/92 */
+.imagen-las-aventuras-de-sherlock-holmes-1891-92{
+    @extend .imagen-estudio-en-escarlata-1887;
+    width: 135px;
+}
+
+/* las-memorias-de-sherlock-holmes-1892-93 */
+.imagen-las-memorias-de-sherlock-holmes-1892-93{
+    @extend .imagen-el-signo-de-los-cuatro-1890;
+    width: 90px;
+}
+
+/* El sabueso de los Baskervilles - 1901/02 */
+.imagen-el-sabueso-de-los-baskervilles-1901-02{
+    @extend .imagen-estudio-en-escarlata-1887;
+    width: 85px;
+}
+
+/* el-regreso-de-sherlock-holmes-1903 */
+.imagen-el-regreso-de-sherlock-holmes-1903{
+    @extend .imagen-el-signo-de-los-cuatro-1890;
+    width: 100px;
+}
+
+/* imagen-su-ultima-reverencia-1908-17 */
+.imagen-su-ultima-reverencia-1908-17{
+    @extend .imagen-estudio-en-escarlata-1887;
+    width: 100px;
+}
+
+/* imagen-el-valle-del-terror-1914-15 */
+.imagen-el-valle-del-terror-1914-15{
+    @extend .imagen-el-signo-de-los-cuatro-1890;
+    width: 125px;
+}
+
+/* el-archivo-de-sherlock-holmes-1924-26 */
+.imagen-el-archivo-de-sherlock-holmes-1924-26{
+    @extend .imagen-estudio-en-escarlata-1887;
+    width: 110px;
+}

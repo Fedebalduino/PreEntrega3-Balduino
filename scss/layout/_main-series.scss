@@ -1,0 +1,65 @@
+.series{
+    text-align: center;
+    background-color:$background-principal;
+    border-width: 2px;
+    margin-top: -70px;
+    font-size: 30px;
+}
+
+.titulo-series{
+    text-align: center;
+    color: $color-principal;
+    background-color:$background-principal;
+    border-color: $color-principal;
+    border-width: 2px;
+    border-style:inset;
+    width: 100%;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.resumen-series{
+    text-align: center;
+    background-color:$background-principal;
+    width: 100%;
+    font-size: 22px;
+    text-align: left;
+    margin-top: 10px;
+    ::first-letter{
+        float: left;
+        color: $color-principal;
+        font-family: monospace;
+        font-size: 400%;
+        text-align: right;
+        margin-left: 5px;
+        margin-right: 20px;
+    }
+}
+
+// SERIES
+
+/* las-aventuras-de-sherlock-holmes-1984-1994 */
+.imagen-las-aventuras-de-sherlock-holmes-1984-1994{
+    @include box-model (20px, 10px, 10px, 20px);
+    float: left;
+    width: 110px;
+}
+
+/* sherlock-holmes-en-el-siglo-xxii-1999-2001 */
+.imagen-sherlock-holmes-en-el-siglo-xxii-1999-2001{
+    @extend .imagen-las-aventuras-de-sherlock-holmes-1984-1994;
+    float: right;
+    width: 145px;
+}
+
+/* sherlock-2010-2017 */
+.imagen-sherlock-2010-2017{
+    @extend .imagen-las-aventuras-de-sherlock-holmes-1984-1994;
+    width: 125px;
+}
+
+/* elementary-2012-2019 */
+.imagen-elementary-2012-2019{
+    @extend .imagen-sherlock-holmes-en-el-siglo-xxii-1999-2001;
+    width: 150px;
+}

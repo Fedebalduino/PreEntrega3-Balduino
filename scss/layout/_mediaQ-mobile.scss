@@ -1,0 +1,126 @@
+@media (min-width: 320px) and (max-width: 768px){
+    /* MENU HAMBURGUESA MOBILE */
+    .respmenu ul{
+        display: none;
+        }
+    
+    .respmenu input:checked  ~ ul{
+        display:block;
+        top: 80px;
+        position: absolute;
+        right: 0px;
+        }
+
+    .respmenu {
+        input {
+        display: none;}
+            label {
+                box-sizing: border-box;
+                display: inline-block;
+                border: 2px solid $color-principal;
+                border-radius: 5px;
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+                font-weight: bold;
+                text-align: center;
+                user-select: none;
+                }
+        }
+        
+
+
+        /* Estilo del boton cuando se pasa el mouse por encima*/
+    .respmenu label:hover{
+        background: $background-principal;
+        }
+
+        /* Estilo del boton cuando el menú está expandido*/
+    .respmenu input:checked ~ label {
+            background: $background-principal;
+        }
+
+    .respmenu{
+        ul{
+            margin-top:0;
+            padding: 0;
+            width: 200px;
+            }
+            li {
+                display: block;
+                background: $background-secundario;
+                margin: 0;
+                padding: 10px;
+                list-style: none;
+                border-bottom: 1px solid $background-principal;
+                    a{
+                        text-decoration: none;
+                        color: $color-secundario
+                    }
+                }
+    }
+
+        /*Estilo cuando el mouse pasa encima de cada link del menu*/
+    .respmenu li:hover {
+        filter: brightness(110%);
+            a:hover{
+            background: $background-principal;
+            color: $color-principal;
+            }
+        }
+
+    .botones-header{
+        display: none;
+        }
+
+    .contenedor-header {
+        justify-content: space-around;
+        }
+
+
+
+/* PÁGINA LIBROS */
+.libros{
+    font-size: 20px;
+    }
+.titulo{
+    font-size: 15px;
+    }
+.resumen{
+    font-size: 15px;
+    }
+.imagen{
+        display: flex;
+        justify-content: center;
+    }
+.info{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+        a{
+            text-decoration: none;
+            font-style: none;
+            color: $color-principal;
+            background: $background-principal;
+            border-color: $color-principal;
+            border-width: 3px;
+            border-style:inset;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            width: 180px;
+        }
+    }
+    .contenedor-header{
+        background: $background-principal;
+    }
+    .libros{
+        background: $background-principal;
+    }
+    .titulo{
+        background: $background-principal;
+    }
+    .resumen{
+        background: $background-principal;
+    }
+}

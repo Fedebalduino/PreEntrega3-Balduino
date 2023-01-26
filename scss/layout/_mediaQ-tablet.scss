@@ -1,0 +1,89 @@
+@media (min-width: 768px) and (max-width: 1023px){
+    /* MENU HAMBURGUESA TABLET */
+    .respmenu ul{
+        display: none;
+        }
+
+    .respmenu input:checked  ~ ul{
+        display:block;
+        top: 80px;
+        position: absolute;
+        right: 0px;
+        }
+
+    .respmenu input {
+        display: none;
+        }
+
+    .respmenu label {
+        box-sizing: border-box;
+        display: inline-block;
+        border: 2px solid $color-principal;
+        border-radius: 5px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-weight: bold;
+        text-align: center;
+        user-select: none;
+        }
+
+        /* Estilo del boton cuando se pasa el mouse por encima*/
+    .respmenu label:hover{
+        background: $background-principal;
+        }
+
+        /* Estilo del boton cuando el menú está expandido*/
+    .respmenu input:checked ~ label {
+            background: $background-principal;
+        }
+
+    .respmenu ul{
+        margin-top:0;
+        padding: 0;
+        width: 200px;
+        }
+
+    .respmenu li {
+        display: block;
+        background: $background-secundario;
+        margin: 0;
+        padding: 10px;
+        list-style: none;
+        border-bottom: 1px solid $background-principal;
+        }
+
+    .respmenu li a{
+        text-decoration: none;
+        color: $color-secundario
+        }
+
+        /*Estilo cuando el mouse pasa encima de cada link del menu*/
+    .respmenu li:hover {
+        filter: brightness(110%);
+        }
+
+    .respmenu li a:hover{
+            background: $background-principal;
+            color: $color-principal;
+        }
+    .botones-header{
+        display: none;
+        }
+
+    .contenedor-header {
+        justify-content: space-around;
+        }
+
+
+
+        /* PAGINA LIBROS */
+
+    .libros{
+        font-size: 25px;
+    }
+
+    .titulo{
+        font-size: 20px;
+    }
+}

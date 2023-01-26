@@ -1,0 +1,256 @@
+/* TITULO (h1)*/
+.peliculas{
+    text-align: center;
+    background-color:$background-principal;
+    border-width: 2px;
+    margin-top: -70px;
+    font-size: 30px;
+}
+
+.titulo-pelicula{
+    text-align: center;
+    color: $color-principal;
+    background-color:$background-principal;
+    border-color: $color-principal;
+    border-width: 2px;
+    border-style:inset;
+    width: 100%;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+/* Resumen */
+.resumen-pelicula{
+    text-align: center;
+    background-color:$background-principal;
+    width: 100%;
+    font-size: 22px;
+    text-align: left;
+    margin-top: 10px;
+    ::first-letter{
+        float: left;
+        color: $color-principal;
+        font-family: monospace;
+        font-size: 400%;
+        text-align: right;
+        margin-left: 5px;
+        margin-right: 20px;
+    }
+}
+
+/* Sherlock Holmes perplejo - 1900/1903 */
+.imagen-sherlock-holmes-perplejo-1900-1903{
+    @include box-model (20px, 10px, 10px, 20px);
+    float: left;
+    width: 250px;
+}
+
+/* sherlock-holmes-1916 */
+.imagen-sherlock-holmes-1916{
+    @extend .imagen-sherlock-holmes-perplejo-1900-1903;
+    float: right;
+    width: 150px;
+}
+
+/* sherlock-holmes-1922 */
+.imagen-sherlock-holmes-1922{
+    @extend .imagen-sherlock-holmes-perplejo-1900-1903;
+    width: 100px;
+}
+/* el-regreso-de-sherlock-holmes-1929 */
+.imagen-el-regreso-de-sherlock-holmes-1929{
+    @extend .imagen-sherlock-holmes-1916;
+    width: 120px;
+}
+
+/* el-hombre-que-fue-sherlock-holmes-1937 */
+.imagen-el-hombre-que-fue-sherlock-holmes-1937{
+    @extend .imagen-sherlock-holmes-perplejo-1900-1903;
+    width: 90px;
+}
+
+/* el-sabueso-de-los-baskervilles-1939 */
+.imagen-el-sabueso-de-los-baskervilles-1939{
+    @extend .imagen-sherlock-holmes-1916;
+    width: 105px;
+}
+
+/* las-aventuras-de-sherlock-holmes-1939 */
+.imagen-las-aventuras-de-sherlock-holmes-1939{
+    @extend .imagen-sherlock-holmes-perplejo-1900-1903;
+    width: 135px;
+}
+
+/* la-voz-del-terror-1942 */
+.imagen-la-voz-del-terror-1942{
+    @extend .imagen-sherlock-holmes-1916;
+    width: 115px;
+}
+
+/* el-arma-secreta-1942 */
+.imagen-el-arma-secreta-1942{
+    @extend .imagen-sherlock-holmes-perplejo-1900-1903;
+    width: 55px;
+}
+
+/* sherlock-holmes-desafia-a-la-muerte-1943 */
+.imagen-sherlock-holmes-desafia-a-la-muerte-1943{
+    @extend .imagen-sherlock-holmes-1916;
+    width: 55px;
+}
+
+/* sherlock-holmes-en-washington-1943 */
+.imagen-sherlock-holmes-en-washington-1943{
+    @extend .imagen-sherlock-holmes-perplejo-1900-1903;
+    width: 39px;
+}
+
+/* la-garra-escarlata-1944 */
+.imagen-la-garra-escarlata-1944{
+    @extend .imagen-sherlock-holmes-1916;
+    width: 125px;
+}
+
+/* la-perla-maldita-1944 */
+.imagen-la-perla-maldita-1944{
+    @extend .imagen-sherlock-holmes-perplejo-1900-1903;
+    width: 56px;
+}
+
+/* la-mujer-araña-1944 */
+.imagen-la-mujer-araña-1944{
+    @extend .imagen-sherlock-holmes-1916;
+    width: 55px;
+}
+
+/* la-casa-del-terror-1945 */
+.imagen-la-casa-del-terror-1945{
+    @extend .imagen-sherlock-holmes-perplejo-1900-1903;
+    width: 40px;
+}
+
+/* la-dama-de-verde-1945 */
+.imagen-la-dama-de-verde-1945{
+    @extend .imagen-sherlock-holmes-1916;
+    width: 90px;
+}
+
+/* persecucion-en-argel-1945 */
+.imagen-persecucion-en-argel-1945{
+    @extend .imagen-sherlock-holmes-perplejo-1900-1903;
+    width: 40px;
+}
+
+/* terror-en-la-noche-1946 */
+.imagen-terror-en-la-noche-1946{
+    @extend .imagen-sherlock-holmes-1916;
+    width: 120px;
+}
+
+/* vestida-para-matar-1946 */
+.imagen-vestida-para-matar-1946{
+    @extend .imagen-sherlock-holmes-perplejo-1900-1903;
+    width: 115px;
+}
+
+/* el-sabueso-de-los-baskervilles-1959 */
+.imagen-el-sabueso-de-los-baskervilles-1959{
+    @extend .imagen-sherlock-holmes-1916;
+    width: 120px;
+}
+
+/* el-collar-de-la-muerte-1962 */
+.imagen-el-collar-de-la-muerte-1962{
+    @extend .imagen-sherlock-holmes-perplejo-1900-1903;
+    width: 70px;
+}
+
+/* la-vida-privada-de-sherlock-holmes-1970 */
+.imagen-la-vida-privada-de-sherlock-holmes-1970{
+    @extend .imagen-sherlock-holmes-1916;
+    width: 125px;
+}
+
+/* la-aventura-del-hermano-inteligente-de-sherlock-holmes-1975 */
+.imagen-la-aventura-del-hermano-inteligente-de-sherlock-holmes-1975{
+    @extend .imagen-sherlock-holmes-perplejo-1900-1903;
+    width: 120px;
+}
+
+/* ataque-al-orient-express-1976 */
+.imagen-ataque-al-orient-express-1976{
+    @extend .imagen-sherlock-holmes-1916;
+    width: 115px;
+}
+
+/* asesinato-por-decreto-1979 */
+.imagen-asesinato-por-decreto-1979{
+    @extend .imagen-sherlock-holmes-perplejo-1900-1903;
+    width: 100px;
+}
+
+/* el-joven-sherlock-holmes-1985 */
+.imagen-el-joven-sherlock-holmes-1985{
+    @extend .imagen-sherlock-holmes-1916;
+    width: 100px;
+}
+
+/* sin-pistas-1988 */
+.imagen-sin-pistas-1988{
+    @extend .imagen-sherlock-holmes-perplejo-1900-1903;
+    width: 50px;
+}
+
+/* el-sabueso-de-los-baskervilles-1988 */
+.imagen-el-sabueso-de-los-baskervilles-1988{
+    @extend .imagen-sherlock-holmes-1916;
+    width: 90px;
+}
+
+/* sherlock-holmes-en-caracas-1991 */
+.imagen-sherlock-holmes-en-caracas-1991{
+    @extend .imagen-sherlock-holmes-perplejo-1900-1903;
+    width: 20px;
+}
+
+/* sherlock-holmes-2009 */
+.imagen-sherlock-holmes-2009{
+    @extend .imagen-sherlock-holmes-1916;
+    width: 85px;
+}
+
+/* sherlock-holmes-juego-de-sombras-2011 */
+.imagen-sherlock-holmes-juego-de-sombras-2011{
+    @extend .imagen-sherlock-holmes-perplejo-1900-1903;
+    width: 100px;
+}
+
+/* holmes-&-watson-madrid-days-2012 */
+.imagen-holmes-y-watson-madrid-days-2012{
+    @extend .imagen-sherlock-holmes-1916;
+    width: 90px;
+}
+
+/* mr-holmes-2015 */
+.imagen-mr-holmes-2015{
+    @extend .imagen-sherlock-holmes-perplejo-1900-1903;
+    width: 120px;
+}
+
+/* holmes-&-watson-2018 */
+.imagen-holmes-y-watson-2018{
+    @extend .imagen-sherlock-holmes-1916;
+    width: 75px;
+}
+
+/* enola-holmes-2020 */
+.imagen-enola-holmes-2020{
+    @extend .imagen-sherlock-holmes-perplejo-1900-1903;
+    width: 70px;
+}
+
+/* enola-holmes-2-2022 */
+.imagen-enola-holmes-2-2022{
+    @extend .imagen-sherlock-holmes-1916;
+    width: 105px;
+}

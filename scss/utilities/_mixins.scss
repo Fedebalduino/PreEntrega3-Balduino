@@ -1,0 +1,6 @@
+@mixin box-model($margin-top, $margin-right, $margin-left, $margin-bottom){
+    margin-top: $margin-top;
+    margin-right: $margin-right;
+    margin-left: $margin-left;
+    margin-bottom: $margin-bottom;
+}
